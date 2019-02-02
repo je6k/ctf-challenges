@@ -1,5 +1,5 @@
 
-After the administrator logged in, open the following two page
+After the administrator logged in, open the following  page
 poc：
 one.html---add a admin
 <html>
